@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c --bundleConfigAsCjs && node generate-appsscript-config",
-    "push": "node generate-clasp-config && npm run build && clasp push"
+    "push": "node generate-clasp-config && npm run build && clasp push",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +18,12 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-typescript": "^7.23.3",
     "@babel/runtime-corejs3": "^7.23.9",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/google-apps-script": "^1.0.81",
+    "husky": "^9.0.11",
     "rollup": "^4.12.0",
     "typescript": "^5.3.3"
   },
