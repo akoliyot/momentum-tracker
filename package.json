@@ -1,0 +1,30 @@
+{
+  "name": "momentum-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --bundleConfigAsCjs && node generate-appsscript-config",
+    "push": "node generate-clasp-config && npm run build && clasp push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@babel/runtime-corejs3": "^7.23.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/google-apps-script": "^1.0.81",
+    "rollup": "^4.12.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.9",
+    "dotenv": "^16.4.4"
+  }
+}

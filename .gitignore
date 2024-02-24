@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules
+
+# TypeScript build output
+build
+
+# Environment variables
+.env
+
+# IDE files
+.idea
+.vscode
+
+# Log files
+*.log
+
+# Google Apps Script project settings
+.clasp.json
+
+# Mac OS System Files
+.DS_Store

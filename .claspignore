@@ -1,0 +1,8 @@
+**/.claspignore/**
+**/.gitignore/**
+**/.vscode/**
+**/node_modules/**
+**/*.log/**
+**/*.ts/**
+!**/*.gs
+!**/appsscript.json
