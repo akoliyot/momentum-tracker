@@ -1,7 +1,7 @@
 const fs = require('fs');
 require('dotenv').config();
 
-const scriptId = process.env.SCRIPT_ID;
+const scriptId = process.env.MOMENTUM_TRACKER_SCRIPT_ID;
 
 const data = {
   _comment:
