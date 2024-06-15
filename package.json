@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c --bundleConfigAsCjs && node generate-appsscript-config",
+    "watch": "npm run build && clasp push --watch",
     "push": "node generate-clasp-config && npm run build && clasp push",
     "prepare": "husky"
   },
